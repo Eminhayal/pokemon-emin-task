@@ -8,9 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		85DD274F583BBC237B33709E /* Pods_pokemon_emin_task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F93F50C3A87DBB997CFDDC2B /* Pods_pokemon_emin_task.framework */; };
+		8CC0395A2811789100F84F54 /* StoryBoardInstainte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC039592811789100F84F54 /* StoryBoardInstainte.swift */; };
+		8CC0395C2811790500F84F54 /* HomeFlowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0395B2811790500F84F54 /* HomeFlowVC.swift */; };
+		8CC0395E2811792200F84F54 /* DetailFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC0395D2811792200F84F54 /* DetailFlow.storyboard */; };
+		8CC039602811793400F84F54 /* DetailFlowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0395F2811793400F84F54 /* DetailFlowVC.swift */; };
+		8CC039622811794D00F84F54 /* DetailFlowVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC039612811794D00F84F54 /* DetailFlowVM.swift */; };
+		8CC039642811796C00F84F54 /* HomeFlowVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC039632811796C00F84F54 /* HomeFlowVM.swift */; };
+		8CC0396E28117BC800F84F54 /* HomeFlowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0396C28117BC800F84F54 /* HomeFlowCell.swift */; };
+		8CC0396F28117BC800F84F54 /* HomeFlowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CC0396D28117BC800F84F54 /* HomeFlowCell.xib */; };
 		8CE7B41B2810641000C72172 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE7B41A2810641000C72172 /* AppDelegate.swift */; };
 		8CE7B41D2810641000C72172 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE7B41C2810641000C72172 /* SceneDelegate.swift */; };
-		8CE7B41F2810641000C72172 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE7B41E2810641000C72172 /* ViewController.swift */; };
 		8CE7B4222810641000C72172 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE7B4202810641000C72172 /* Main.storyboard */; };
 		8CE7B4242810641200C72172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CE7B4232810641200C72172 /* Assets.xcassets */; };
 		8CE7B4272810641200C72172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE7B4252810641200C72172 /* LaunchScreen.storyboard */; };
@@ -19,10 +26,17 @@
 /* Begin PBXFileReference section */
 		067DA960193C98AAB04DAEBF /* Pods-pokemon-emin-task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokemon-emin-task.release.xcconfig"; path = "Target Support Files/Pods-pokemon-emin-task/Pods-pokemon-emin-task.release.xcconfig"; sourceTree = "<group>"; };
 		0FD403C7CBAA15A55AEB3F16 /* Pods-pokemon-emin-task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokemon-emin-task.debug.xcconfig"; path = "Target Support Files/Pods-pokemon-emin-task/Pods-pokemon-emin-task.debug.xcconfig"; sourceTree = "<group>"; };
+		8CC039592811789100F84F54 /* StoryBoardInstainte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoardInstainte.swift; sourceTree = "<group>"; };
+		8CC0395B2811790500F84F54 /* HomeFlowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowVC.swift; sourceTree = "<group>"; };
+		8CC0395D2811792200F84F54 /* DetailFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailFlow.storyboard; sourceTree = "<group>"; };
+		8CC0395F2811793400F84F54 /* DetailFlowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFlowVC.swift; sourceTree = "<group>"; };
+		8CC039612811794D00F84F54 /* DetailFlowVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFlowVM.swift; sourceTree = "<group>"; };
+		8CC039632811796C00F84F54 /* HomeFlowVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowVM.swift; sourceTree = "<group>"; };
+		8CC0396C28117BC800F84F54 /* HomeFlowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowCell.swift; sourceTree = "<group>"; };
+		8CC0396D28117BC800F84F54 /* HomeFlowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeFlowCell.xib; sourceTree = "<group>"; };
 		8CE7B4172810641000C72172 /* pokemon-emin-task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pokemon-emin-task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE7B41A2810641000C72172 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CE7B41C2810641000C72172 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8CE7B41E2810641000C72172 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8CE7B4212810641000C72172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CE7B4232810641200C72172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CE7B4262810641200C72172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +56,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8CC039552811774E00F84F54 /* HomeFlow */ = {
+			isa = PBXGroup;
+			children = (
+				8CE7B4202810641000C72172 /* Main.storyboard */,
+				8CC0395B2811790500F84F54 /* HomeFlowVC.swift */,
+				8CC039632811796C00F84F54 /* HomeFlowVM.swift */,
+			);
+			path = HomeFlow;
+			sourceTree = "<group>";
+		};
+		8CC039562811775E00F84F54 /* DetailFlow */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0395D2811792200F84F54 /* DetailFlow.storyboard */,
+				8CC0395F2811793400F84F54 /* DetailFlowVC.swift */,
+				8CC039612811794D00F84F54 /* DetailFlowVM.swift */,
+			);
+			path = DetailFlow;
+			sourceTree = "<group>";
+		};
+		8CC039572811776500F84F54 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				8CC039672811798A00F84F54 /* NetworkService */,
+				8CC039662811798400F84F54 /* Model */,
+				8CC039652811797B00F84F54 /* Cell */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		8CC039582811787400F84F54 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8CC039592811789100F84F54 /* StoryBoardInstainte.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8CC039652811797B00F84F54 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0396C28117BC800F84F54 /* HomeFlowCell.swift */,
+				8CC0396D28117BC800F84F54 /* HomeFlowCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8CC039662811798400F84F54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8CC039672811798A00F84F54 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
 		8CE7B40E2810641000C72172 = {
 			isa = PBXGroup;
 			children = (
@@ -63,10 +138,12 @@
 		8CE7B4192810641000C72172 /* pokemon-emin-task */ = {
 			isa = PBXGroup;
 			children = (
+				8CC039582811787400F84F54 /* Extension */,
+				8CC039572811776500F84F54 /* Commons */,
+				8CC039562811775E00F84F54 /* DetailFlow */,
+				8CC039552811774E00F84F54 /* HomeFlow */,
 				8CE7B41A2810641000C72172 /* AppDelegate.swift */,
 				8CE7B41C2810641000C72172 /* SceneDelegate.swift */,
-				8CE7B41E2810641000C72172 /* ViewController.swift */,
-				8CE7B4202810641000C72172 /* Main.storyboard */,
 				8CE7B4232810641200C72172 /* Assets.xcassets */,
 				8CE7B4252810641200C72172 /* LaunchScreen.storyboard */,
 				8CE7B4282810641200C72172 /* Info.plist */,
@@ -80,7 +157,6 @@
 				0FD403C7CBAA15A55AEB3F16 /* Pods-pokemon-emin-task.debug.xcconfig */,
 				067DA960193C98AAB04DAEBF /* Pods-pokemon-emin-task.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,8 +228,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CE7B4272810641200C72172 /* LaunchScreen.storyboard in Resources */,
+				8CC0396F28117BC800F84F54 /* HomeFlowCell.xib in Resources */,
 				8CE7B4242810641200C72172 /* Assets.xcassets in Resources */,
 				8CE7B4222810641000C72172 /* Main.storyboard in Resources */,
+				8CC0395E2811792200F84F54 /* DetailFlow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,9 +267,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CE7B41F2810641000C72172 /* ViewController.swift in Sources */,
+				8CC0395A2811789100F84F54 /* StoryBoardInstainte.swift in Sources */,
+				8CC0395C2811790500F84F54 /* HomeFlowVC.swift in Sources */,
 				8CE7B41B2810641000C72172 /* AppDelegate.swift in Sources */,
+				8CC039602811793400F84F54 /* DetailFlowVC.swift in Sources */,
 				8CE7B41D2810641000C72172 /* SceneDelegate.swift in Sources */,
+				8CC039642811796C00F84F54 /* HomeFlowVM.swift in Sources */,
+				8CC0396E28117BC800F84F54 /* HomeFlowCell.swift in Sources */,
+				8CC039622811794D00F84F54 /* DetailFlowVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

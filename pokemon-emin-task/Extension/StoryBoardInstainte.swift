@@ -1,5 +1,5 @@
 //
-//  UIViewController-Extension.swift
+//  StoryBoardInstainte.swift
 //  pokemon-emin-task
 //
 //  Created by Emin Hayal on 21.04.2022.
@@ -7,7 +7,7 @@
 import UIKit
 
 enum StoryboardType: String {
-    case home = "HomeFlow"
+    case home = "Main"
     case detail = "DetailFlow"
 }
 
