@@ -52,7 +52,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="denemee" destination="izJ-26-pSF" id="I4C-kQ-ZV9"/>
+                <outlet property="pokemon" destination="izJ-26-pSF" id="Qca-Mo-Zub"/>
             </connections>
             <point key="canvasLocation" x="173.91304347826087" y="176.11607142857142"/>
         </tableViewCell>

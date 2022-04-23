@@ -38,7 +38,7 @@ extension HomeFlowVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         viewModel.getAppendingData(index: indexPath.row)
         let cell = tableView.dequeueReusableCell(withIdentifier: HomeFlowCell.identifier, for: indexPath) as! HomeFlowCell
-        cell.denemee.text = app.pokemon[indexPath.row].name
+        cell.pokemon.text = app.pokemon[indexPath.row].name
         return cell
     }
     

@@ -6,3 +6,15 @@
   
 */
 "anabaslik" = "Pokemon Task";
+"load" = "Loading";
+"Stat" = "Stat";
+"Name" = "Name: ";
+"Height" = "Height: ";
+"Atack" = "Atack: ";
+"Hp" = "Hp: ";
+"Defense" = "Defense: ";
+"Special Atack" = "Special Atack: ";
+"Speed" = "Speed: ";
+"Type" = "Type: ";
+"Type Class" = "Type Class: ";
+

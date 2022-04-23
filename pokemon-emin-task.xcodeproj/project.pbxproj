@@ -13,10 +13,10 @@
 		8C28443A2811E2B3009712BC /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8C2844392811E2B3009712BC /* FirebaseCrashlytics */; };
 		8C2844432811E2EC009712BC /* pokemon_emin_taskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2844422811E2EC009712BC /* pokemon_emin_taskTests.swift */; };
 		8C28444A2811E369009712BC /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2844492811E369009712BC /* AppModule.swift */; };
-		8C28444C28132598009712BC /* ImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C28444B28132598009712BC /* ImageView+Extension.swift */; };
 		8C28444E28133779009712BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C28444D28133779009712BC /* GoogleService-Info.plist */; };
 		8C28445128141142009712BC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C28445328141142009712BC /* Localizable.strings */; };
 		8C2844582814180A009712BC /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2844572814180A009712BC /* String+Extensions.swift */; };
+		8C28445B28142DE5009712BC /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C28445A28142DE5009712BC /* SwiftSpinner.swift */; };
 		8CA64B8D28118B410001BE53 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA64B8C28118B410001BE53 /* Pokemon.swift */; };
 		8CA64B8F28118DFA0001BE53 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA64B8E28118DFA0001BE53 /* Network.swift */; };
 		8CA64B9128118E550001BE53 /* PokemonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA64B9028118E540001BE53 /* PokemonDetail.swift */; };
@@ -54,13 +54,13 @@
 		8C2844402811E2EC009712BC /* pokemon-emin-taskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pokemon-emin-taskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C2844422811E2EC009712BC /* pokemon_emin_taskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokemon_emin_taskTests.swift; sourceTree = "<group>"; };
 		8C2844492811E369009712BC /* AppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
-		8C28444B28132598009712BC /* ImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+Extension.swift"; sourceTree = "<group>"; };
 		8C28444D28133779009712BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8C28445228141142009712BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8C2844542814117D009712BC /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		8C2844552814117D009712BC /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		8C2844562814117D009712BC /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8C2844572814180A009712BC /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		8C28445A28142DE5009712BC /* SwiftSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
 		8CA64B8C28118B410001BE53 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		8CA64B8E28118DFA0001BE53 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		8CA64B9028118E540001BE53 /* PokemonDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetail.swift; sourceTree = "<group>"; };
@@ -119,6 +119,14 @@
 			path = "pokemon-emin-taskTests";
 			sourceTree = "<group>";
 		};
+		8C28445928142DD6009712BC /* Spinner */ = {
+			isa = PBXGroup;
+			children = (
+				8C28445A28142DE5009712BC /* SwiftSpinner.swift */,
+			);
+			path = Spinner;
+			sourceTree = "<group>";
+		};
 		8CC039552811774E00F84F54 /* HomeFlow */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +150,7 @@
 		8CC039572811776500F84F54 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				8C28445928142DD6009712BC /* Spinner */,
 				8CC039782811855800F84F54 /* AppContainer */,
 				8CC039672811798A00F84F54 /* NetworkService */,
 				8CC039662811798400F84F54 /* Model */,
@@ -154,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				8CC039592811789100F84F54 /* StoryBoardInstainte.swift */,
-				8C28444B28132598009712BC /* ImageView+Extension.swift */,
 				8C2844572814180A009712BC /* String+Extensions.swift */,
 			);
 			path = Extension;
@@ -374,7 +382,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C28444C28132598009712BC /* ImageView+Extension.swift in Sources */,
 				8CC0395A2811789100F84F54 /* StoryBoardInstainte.swift in Sources */,
 				8C28444A2811E369009712BC /* AppModule.swift in Sources */,
 				8CC0395C2811790500F84F54 /* HomeFlowVC.swift in Sources */,
@@ -388,6 +395,7 @@
 				8CA64B8D28118B410001BE53 /* Pokemon.swift in Sources */,
 				8CC0396E28117BC800F84F54 /* HomeFlowCell.swift in Sources */,
 				8CC039762811813F00F84F54 /* DetailFlowCollectionCell.swift in Sources */,
+				8C28445B28142DE5009712BC /* SwiftSpinner.swift in Sources */,
 				8C2844332811D42E009712BC /* NetworkManager.swift in Sources */,
 				8CC0397A2811857600F84F54 /* AppRouter.swift in Sources */,
 				8CA64B9128118E550001BE53 /* PokemonDetail.swift in Sources */,

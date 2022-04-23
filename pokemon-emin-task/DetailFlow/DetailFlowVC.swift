@@ -12,16 +12,28 @@ class DetailFlowVC: UIViewController {
     @IBOutlet private weak var collectionView: UICollectionView!
     @IBOutlet private weak var bottomView: UIView!
     @IBOutlet weak var collectionViewLayout: UICollectionViewFlowLayout!
+    //MARK: Label Localization
     
-    @IBOutlet weak var typeClassLabel: UILabel!
-    @IBOutlet weak var typeLabel: UILabel!
-    @IBOutlet weak var speedLabel: UILabel!
-    @IBOutlet weak var specialAtackLabel: UILabel!
-    @IBOutlet weak var defenseLabel: UILabel!
-    @IBOutlet weak var hpLabel: UILabel!
-    @IBOutlet weak var atackLabel: UILabel!
-    @IBOutlet weak var heightLabel: UILabel!
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet private weak var statLocalizationLabel: UILabel!
+    @IBOutlet private weak var atackLocalizationLabel: UILabel!
+    @IBOutlet private weak var nameLocalizationLabel: UILabel!
+    @IBOutlet private weak var heightLocalizationLabel: UILabel!
+    @IBOutlet private weak var hpLocalizationLabel: UILabel!
+    @IBOutlet private weak var defenseLocalizationLabel: UILabel!
+    @IBOutlet private weak var specialLocalizationLabel: UILabel!
+    @IBOutlet private weak var speedLocalizationLabel: UILabel!
+    @IBOutlet private weak var typeLocalizationLabel: UILabel!
+    @IBOutlet private weak var typeClassLocalizationLabel: UILabel!
+    //MARK: LABEL VALUE
+    @IBOutlet private weak var typeClassLabel: UILabel!
+    @IBOutlet private weak var typeLabel: UILabel!
+    @IBOutlet private weak var speedLabel: UILabel!
+    @IBOutlet private weak var specialAtackLabel: UILabel!
+    @IBOutlet private weak var defenseLabel: UILabel!
+    @IBOutlet private weak var hpLabel: UILabel!
+    @IBOutlet private weak var atackLabel: UILabel!
+    @IBOutlet private weak var heightLabel: UILabel!
+    @IBOutlet private weak var nameLabel: UILabel!
     var viewModel: DetailFlowProtocol!
     
     override func viewDidLoad() {
@@ -32,13 +44,26 @@ class DetailFlowVC: UIViewController {
     }
     
     private func setupUI() {
-        bottomView.layer.cornerRadius = 24
-        bottomView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.isPagingEnabled = true
         collectionView.register(DetailFlowCollectionCell.nibName, forCellWithReuseIdentifier: DetailFlowCollectionCell.identifier)
         collectionView.collectionViewLayout = setCollectionViewLayout()
+        setText()
+        
+    }
+    
+    private func setText() {
+        statLocalizationLabel.text = "Stat".localize
+        nameLocalizationLabel.text = "Name".localize
+        heightLocalizationLabel.text = "Height".localize
+        hpLocalizationLabel.text = "Hp".localize
+        atackLocalizationLabel.text = "Atack".localize
+        defenseLocalizationLabel.text = "Defense".localize
+        specialLocalizationLabel.text = "Special Atack".localize
+        speedLocalizationLabel.text = "Speed".localize
+        typeLocalizationLabel.text = "Type".localize
+        typeClassLocalizationLabel.text = "Type Class".localize
     }
     
     fileprivate func setCollectionViewLayout() -> UICollectionViewFlowLayout {

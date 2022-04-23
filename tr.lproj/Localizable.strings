@@ -7,3 +7,15 @@
 */
 
 "anabaslik" = "Pokemon Görev";
+"Stat" = "Özellikler";
+"load" = "Yükleniyor";
+"Name" = "İsim: ";
+"Height" = "Yükseklik: ";
+"Atack" = "Saldırı: ";
+"Hp" = "Can: ";
+"Defense" = "Savunma: ";
+"Special Atack" = "Özel Saldırı: ";
+"Speed" = "Hız: ";
+"Type" = "Tür: ";
+"Type Class" = "Sınıfı: ";
+
