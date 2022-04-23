@@ -1,6 +1,0 @@
-framework module Pods_pokemon_emin_task {
-  umbrella header "Pods-pokemon-emin-task-umbrella.h"
-
-  export *
-  module * { export * }
-}

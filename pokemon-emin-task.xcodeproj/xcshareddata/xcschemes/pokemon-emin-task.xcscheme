@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1240"
+   LastUpgradeVersion = "1320"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "113BF30404687C53964FF4C4AD100385"
-               BuildableName = "Pods_pokemon_emin_task.framework"
-               BlueprintName = "Pods-pokemon-emin-task"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "8CE7B4162810641000C72172"
+               BuildableName = "pokemon-emin-task.app"
+               BlueprintName = "pokemon-emin-task"
+               ReferencedContainer = "container:pokemon-emin-task.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8C28443F2811E2EC009712BC"
+               BuildableName = "pokemon-emin-taskTests.xctest"
+               BlueprintName = "pokemon-emin-taskTests"
+               ReferencedContainer = "container:pokemon-emin-task.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -40,6 +50,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8CE7B4162810641000C72172"
+            BuildableName = "pokemon-emin-task.app"
+            BlueprintName = "pokemon-emin-task"
+            ReferencedContainer = "container:pokemon-emin-task.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -47,6 +67,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8CE7B4162810641000C72172"
+            BuildableName = "pokemon-emin-task.app"
+            BlueprintName = "pokemon-emin-task"
+            ReferencedContainer = "container:pokemon-emin-task.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

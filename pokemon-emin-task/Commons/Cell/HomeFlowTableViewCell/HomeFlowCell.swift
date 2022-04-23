@@ -9,6 +9,7 @@ import UIKit
 
 class HomeFlowCell: UITableViewCell {
     
+    @IBOutlet weak var denemee: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -20,16 +20,25 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEY-BY-7ib">
                         <rect key="frame" x="0.0" y="0.0" width="370" height="150"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.on.square.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="uds-AN-A7q">
-                                <rect key="frame" x="0.0" y="-2.5" width="170" height="155"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PokeBall" translatesAutoresizingMaskIntoConstraints="NO" id="uds-AN-A7q">
+                                <rect key="frame" x="0.0" y="0.0" width="170" height="150"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izJ-26-pSF">
+                                <rect key="frame" x="170" y="63" width="180" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="150" id="5Yx-IU-Oef"/>
                             <constraint firstAttribute="bottom" secondItem="uds-AN-A7q" secondAttribute="bottom" id="9Cw-Ei-wNF"/>
                             <constraint firstItem="uds-AN-A7q" firstAttribute="top" secondItem="AEY-BY-7ib" secondAttribute="top" id="FdT-T3-yEo"/>
+                            <constraint firstItem="izJ-26-pSF" firstAttribute="leading" secondItem="uds-AN-A7q" secondAttribute="trailing" id="H81-wf-Akr"/>
                             <constraint firstAttribute="trailing" secondItem="uds-AN-A7q" secondAttribute="trailing" constant="200" id="S2y-LZ-LSL"/>
+                            <constraint firstItem="izJ-26-pSF" firstAttribute="centerY" secondItem="AEY-BY-7ib" secondAttribute="centerY" id="adD-yC-Ik6"/>
+                            <constraint firstAttribute="trailing" secondItem="izJ-26-pSF" secondAttribute="trailing" constant="20" id="cSc-f7-1FA"/>
                             <constraint firstItem="uds-AN-A7q" firstAttribute="leading" secondItem="AEY-BY-7ib" secondAttribute="leading" id="tQc-NG-GG3"/>
                         </constraints>
                     </view>
@@ -42,11 +51,14 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="denemee" destination="izJ-26-pSF" id="I4C-kQ-ZV9"/>
+            </connections>
             <point key="canvasLocation" x="173.91304347826087" y="176.11607142857142"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="square.and.arrow.up.on.square.fill" catalog="system" width="117" height="128"/>
+        <image name="PokeBall" width="512" height="511"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

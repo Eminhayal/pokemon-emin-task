@@ -7,7 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		85DD274F583BBC237B33709E /* Pods_pokemon_emin_task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F93F50C3A87DBB997CFDDC2B /* Pods_pokemon_emin_task.framework */; };
+		8C2844332811D42E009712BC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2844322811D42E009712BC /* NetworkManager.swift */; };
+		8C2844352811D4A5009712BC /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2844342811D4A5009712BC /* Api.swift */; };
+		8C2844382811E2B3009712BC /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8C2844372811E2B3009712BC /* FirebaseAnalytics */; };
+		8C28443A2811E2B3009712BC /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8C2844392811E2B3009712BC /* FirebaseCrashlytics */; };
+		8C2844432811E2EC009712BC /* pokemon_emin_taskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2844422811E2EC009712BC /* pokemon_emin_taskTests.swift */; };
+		8C28444A2811E369009712BC /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2844492811E369009712BC /* AppModule.swift */; };
+		8C28444C28132598009712BC /* ImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C28444B28132598009712BC /* ImageView+Extension.swift */; };
+		8C28444E28133779009712BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C28444D28133779009712BC /* GoogleService-Info.plist */; };
+		8C28445128141142009712BC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C28445328141142009712BC /* Localizable.strings */; };
+		8C2844582814180A009712BC /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2844572814180A009712BC /* String+Extensions.swift */; };
+		8CA64B8D28118B410001BE53 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA64B8C28118B410001BE53 /* Pokemon.swift */; };
+		8CA64B8F28118DFA0001BE53 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA64B8E28118DFA0001BE53 /* Network.swift */; };
+		8CA64B9128118E550001BE53 /* PokemonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA64B9028118E540001BE53 /* PokemonDetail.swift */; };
 		8CC0395A2811789100F84F54 /* StoryBoardInstainte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC039592811789100F84F54 /* StoryBoardInstainte.swift */; };
 		8CC0395C2811790500F84F54 /* HomeFlowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0395B2811790500F84F54 /* HomeFlowVC.swift */; };
 		8CC0395E2811792200F84F54 /* DetailFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC0395D2811792200F84F54 /* DetailFlow.storyboard */; };
@@ -16,6 +28,9 @@
 		8CC039642811796C00F84F54 /* HomeFlowVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC039632811796C00F84F54 /* HomeFlowVM.swift */; };
 		8CC0396E28117BC800F84F54 /* HomeFlowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0396C28117BC800F84F54 /* HomeFlowCell.swift */; };
 		8CC0396F28117BC800F84F54 /* HomeFlowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CC0396D28117BC800F84F54 /* HomeFlowCell.xib */; };
+		8CC039762811813F00F84F54 /* DetailFlowCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC039742811813F00F84F54 /* DetailFlowCollectionCell.swift */; };
+		8CC039772811813F00F84F54 /* DetailFlowCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CC039752811813F00F84F54 /* DetailFlowCollectionCell.xib */; };
+		8CC0397A2811857600F84F54 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC039792811857600F84F54 /* AppRouter.swift */; };
 		8CE7B41B2810641000C72172 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE7B41A2810641000C72172 /* AppDelegate.swift */; };
 		8CE7B41D2810641000C72172 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE7B41C2810641000C72172 /* SceneDelegate.swift */; };
 		8CE7B4222810641000C72172 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE7B4202810641000C72172 /* Main.storyboard */; };
@@ -23,9 +38,32 @@
 		8CE7B4272810641200C72172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE7B4252810641200C72172 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8C2844442811E2EC009712BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CE7B40F2810641000C72172 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CE7B4162810641000C72172;
+			remoteInfo = "pokemon-emin-task";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		067DA960193C98AAB04DAEBF /* Pods-pokemon-emin-task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokemon-emin-task.release.xcconfig"; path = "Target Support Files/Pods-pokemon-emin-task/Pods-pokemon-emin-task.release.xcconfig"; sourceTree = "<group>"; };
-		0FD403C7CBAA15A55AEB3F16 /* Pods-pokemon-emin-task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokemon-emin-task.debug.xcconfig"; path = "Target Support Files/Pods-pokemon-emin-task/Pods-pokemon-emin-task.debug.xcconfig"; sourceTree = "<group>"; };
+		8C2844322811D42E009712BC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8C2844342811D4A5009712BC /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		8C2844402811E2EC009712BC /* pokemon-emin-taskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pokemon-emin-taskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C2844422811E2EC009712BC /* pokemon_emin_taskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokemon_emin_taskTests.swift; sourceTree = "<group>"; };
+		8C2844492811E369009712BC /* AppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
+		8C28444B28132598009712BC /* ImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+Extension.swift"; sourceTree = "<group>"; };
+		8C28444D28133779009712BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8C28445228141142009712BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8C2844542814117D009712BC /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
+		8C2844552814117D009712BC /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		8C2844562814117D009712BC /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8C2844572814180A009712BC /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		8CA64B8C28118B410001BE53 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		8CA64B8E28118DFA0001BE53 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		8CA64B9028118E540001BE53 /* PokemonDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetail.swift; sourceTree = "<group>"; };
 		8CC039592811789100F84F54 /* StoryBoardInstainte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoardInstainte.swift; sourceTree = "<group>"; };
 		8CC0395B2811790500F84F54 /* HomeFlowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowVC.swift; sourceTree = "<group>"; };
 		8CC0395D2811792200F84F54 /* DetailFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailFlow.storyboard; sourceTree = "<group>"; };
@@ -34,6 +72,9 @@
 		8CC039632811796C00F84F54 /* HomeFlowVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowVM.swift; sourceTree = "<group>"; };
 		8CC0396C28117BC800F84F54 /* HomeFlowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowCell.swift; sourceTree = "<group>"; };
 		8CC0396D28117BC800F84F54 /* HomeFlowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeFlowCell.xib; sourceTree = "<group>"; };
+		8CC039742811813F00F84F54 /* DetailFlowCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFlowCollectionCell.swift; sourceTree = "<group>"; };
+		8CC039752811813F00F84F54 /* DetailFlowCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailFlowCollectionCell.xib; sourceTree = "<group>"; };
+		8CC039792811857600F84F54 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		8CE7B4172810641000C72172 /* pokemon-emin-task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pokemon-emin-task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE7B41A2810641000C72172 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CE7B41C2810641000C72172 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,21 +82,43 @@
 		8CE7B4232810641200C72172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CE7B4262810641200C72172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CE7B4282810641200C72172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F93F50C3A87DBB997CFDDC2B /* Pods_pokemon_emin_task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokemon_emin_task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8C28443D2811E2EC009712BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8CE7B4142810641000C72172 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85DD274F583BBC237B33709E /* Pods_pokemon_emin_task.framework in Frameworks */,
+				8C2844382811E2B3009712BC /* FirebaseAnalytics in Frameworks */,
+				8C28443A2811E2B3009712BC /* FirebaseCrashlytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C28443B2811E2CE009712BC /* pokemon-emin-task-tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "pokemon-emin-task-tests";
+			sourceTree = "<group>";
+		};
+		8C2844412811E2EC009712BC /* pokemon-emin-taskTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C2844422811E2EC009712BC /* pokemon_emin_taskTests.swift */,
+			);
+			path = "pokemon-emin-taskTests";
+			sourceTree = "<group>";
+		};
 		8CC039552811774E00F84F54 /* HomeFlow */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +142,7 @@
 		8CC039572811776500F84F54 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				8CC039782811855800F84F54 /* AppContainer */,
 				8CC039672811798A00F84F54 /* NetworkService */,
 				8CC039662811798400F84F54 /* Model */,
 				8CC039652811797B00F84F54 /* Cell */,
@@ -90,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				8CC039592811789100F84F54 /* StoryBoardInstainte.swift */,
+				8C28444B28132598009712BC /* ImageView+Extension.swift */,
+				8C2844572814180A009712BC /* String+Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -97,8 +163,8 @@
 		8CC039652811797B00F84F54 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				8CC0396C28117BC800F84F54 /* HomeFlowCell.swift */,
-				8CC0396D28117BC800F84F54 /* HomeFlowCell.xib */,
+				8CC039732811810F00F84F54 /* HomeFlowTableViewCell */,
+				8CC03972281180FF00F84F54 /* DetailFlowCollectionCell */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -106,6 +172,8 @@
 		8CC039662811798400F84F54 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8CA64B8C28118B410001BE53 /* Pokemon.swift */,
+				8CA64B9028118E540001BE53 /* PokemonDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -113,17 +181,48 @@
 		8CC039672811798A00F84F54 /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
+				8CA64B8E28118DFA0001BE53 /* Network.swift */,
+				8C2844322811D42E009712BC /* NetworkManager.swift */,
+				8C2844342811D4A5009712BC /* Api.swift */,
 			);
 			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		8CC03972281180FF00F84F54 /* DetailFlowCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				8CC039742811813F00F84F54 /* DetailFlowCollectionCell.swift */,
+				8CC039752811813F00F84F54 /* DetailFlowCollectionCell.xib */,
+			);
+			path = DetailFlowCollectionCell;
+			sourceTree = "<group>";
+		};
+		8CC039732811810F00F84F54 /* HomeFlowTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0396D28117BC800F84F54 /* HomeFlowCell.xib */,
+				8CC0396C28117BC800F84F54 /* HomeFlowCell.swift */,
+			);
+			path = HomeFlowTableViewCell;
+			sourceTree = "<group>";
+		};
+		8CC039782811855800F84F54 /* AppContainer */ = {
+			isa = PBXGroup;
+			children = (
+				8CC039792811857600F84F54 /* AppRouter.swift */,
+				8C2844492811E369009712BC /* AppModule.swift */,
+			);
+			path = AppContainer;
 			sourceTree = "<group>";
 		};
 		8CE7B40E2810641000C72172 = {
 			isa = PBXGroup;
 			children = (
+				8C28445328141142009712BC /* Localizable.strings */,
+				8C28443B2811E2CE009712BC /* pokemon-emin-task-tests */,
 				8CE7B4192810641000C72172 /* pokemon-emin-task */,
+				8C2844412811E2EC009712BC /* pokemon-emin-taskTests */,
 				8CE7B4182810641000C72172 /* Products */,
-				8DBB5D246CD997110A5F6906 /* Pods */,
-				CDB4F3BAFC790FAD9C4932FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				8CE7B4172810641000C72172 /* pokemon-emin-task.app */,
+				8C2844402811E2EC009712BC /* pokemon-emin-taskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,35 +247,36 @@
 				8CE7B4232810641200C72172 /* Assets.xcassets */,
 				8CE7B4252810641200C72172 /* LaunchScreen.storyboard */,
 				8CE7B4282810641200C72172 /* Info.plist */,
+				8C28444D28133779009712BC /* GoogleService-Info.plist */,
 			);
 			path = "pokemon-emin-task";
-			sourceTree = "<group>";
-		};
-		8DBB5D246CD997110A5F6906 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0FD403C7CBAA15A55AEB3F16 /* Pods-pokemon-emin-task.debug.xcconfig */,
-				067DA960193C98AAB04DAEBF /* Pods-pokemon-emin-task.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		CDB4F3BAFC790FAD9C4932FD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F93F50C3A87DBB997CFDDC2B /* Pods_pokemon_emin_task.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8C28443F2811E2EC009712BC /* pokemon-emin-taskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C2844462811E2EC009712BC /* Build configuration list for PBXNativeTarget "pokemon-emin-taskTests" */;
+			buildPhases = (
+				8C28443C2811E2EC009712BC /* Sources */,
+				8C28443D2811E2EC009712BC /* Frameworks */,
+				8C28443E2811E2EC009712BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C2844452811E2EC009712BC /* PBXTargetDependency */,
+			);
+			name = "pokemon-emin-taskTests";
+			productName = "pokemon-emin-taskTests";
+			productReference = 8C2844402811E2EC009712BC /* pokemon-emin-taskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8CE7B4162810641000C72172 /* pokemon-emin-task */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CE7B42B2810641200C72172 /* Build configuration list for PBXNativeTarget "pokemon-emin-task" */;
 			buildPhases = (
-				8084DCF0B175981E09818738 /* [CP] Check Pods Manifest.lock */,
 				8CE7B4132810641000C72172 /* Sources */,
 				8CE7B4142810641000C72172 /* Frameworks */,
 				8CE7B4152810641000C72172 /* Resources */,
@@ -185,6 +286,10 @@
 			dependencies = (
 			);
 			name = "pokemon-emin-task";
+			packageProductDependencies = (
+				8C2844372811E2B3009712BC /* FirebaseAnalytics */,
+				8C2844392811E2B3009712BC /* FirebaseCrashlytics */,
+			);
 			productName = "pokemon-emin-task";
 			productReference = 8CE7B4172810641000C72172 /* pokemon-emin-task.app */;
 			productType = "com.apple.product-type.application";
@@ -199,6 +304,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					8C28443F2811E2EC009712BC = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 8CE7B4162810641000C72172;
+					};
 					8CE7B4162810641000C72172 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -211,80 +320,106 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = 8CE7B40E2810641000C72172;
+			packageReferences = (
+				8C2844362811E2B3009712BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 8CE7B4182810641000C72172 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				8CE7B4162810641000C72172 /* pokemon-emin-task */,
+				8C28443F2811E2EC009712BC /* pokemon-emin-taskTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8C28443E2811E2EC009712BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8CE7B4152810641000C72172 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CC039772811813F00F84F54 /* DetailFlowCollectionCell.xib in Resources */,
 				8CE7B4272810641200C72172 /* LaunchScreen.storyboard in Resources */,
 				8CC0396F28117BC800F84F54 /* HomeFlowCell.xib in Resources */,
 				8CE7B4242810641200C72172 /* Assets.xcassets in Resources */,
 				8CE7B4222810641000C72172 /* Main.storyboard in Resources */,
+				8C28445128141142009712BC /* Localizable.strings in Resources */,
 				8CC0395E2811792200F84F54 /* DetailFlow.storyboard in Resources */,
+				8C28444E28133779009712BC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		8084DCF0B175981E09818738 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
+/* Begin PBXSourcesBuildPhase section */
+		8C28443C2811E2EC009712BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-pokemon-emin-task-checkManifestLockResult.txt",
+				8C2844432811E2EC009712BC /* pokemon_emin_taskTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
 		8CE7B4132810641000C72172 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C28444C28132598009712BC /* ImageView+Extension.swift in Sources */,
 				8CC0395A2811789100F84F54 /* StoryBoardInstainte.swift in Sources */,
+				8C28444A2811E369009712BC /* AppModule.swift in Sources */,
 				8CC0395C2811790500F84F54 /* HomeFlowVC.swift in Sources */,
+				8C2844582814180A009712BC /* String+Extensions.swift in Sources */,
+				8CA64B8F28118DFA0001BE53 /* Network.swift in Sources */,
+				8C2844352811D4A5009712BC /* Api.swift in Sources */,
 				8CE7B41B2810641000C72172 /* AppDelegate.swift in Sources */,
 				8CC039602811793400F84F54 /* DetailFlowVC.swift in Sources */,
 				8CE7B41D2810641000C72172 /* SceneDelegate.swift in Sources */,
 				8CC039642811796C00F84F54 /* HomeFlowVM.swift in Sources */,
+				8CA64B8D28118B410001BE53 /* Pokemon.swift in Sources */,
 				8CC0396E28117BC800F84F54 /* HomeFlowCell.swift in Sources */,
+				8CC039762811813F00F84F54 /* DetailFlowCollectionCell.swift in Sources */,
+				8C2844332811D42E009712BC /* NetworkManager.swift in Sources */,
+				8CC0397A2811857600F84F54 /* AppRouter.swift in Sources */,
+				8CA64B9128118E550001BE53 /* PokemonDetail.swift in Sources */,
 				8CC039622811794D00F84F54 /* DetailFlowVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8C2844452811E2EC009712BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CE7B4162810641000C72172 /* pokemon-emin-task */;
+			targetProxy = 8C2844442811E2EC009712BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		8C28445328141142009712BC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C28445228141142009712BC /* en */,
+				8C2844562814117D009712BC /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		8CE7B4202810641000C72172 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8CE7B4212810641000C72172 /* Base */,
+				8C2844542814117D009712BC /* tr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -293,6 +428,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8CE7B4262810641200C72172 /* Base */,
+				8C2844552814117D009712BC /* tr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -300,10 +436,47 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8C2844472811E2EC009712BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZUBBCB62N3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pokemon-emin-taskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pokemon-emin-task.app/pokemon-emin-task";
+			};
+			name = Debug;
+		};
+		8C2844482811E2EC009712BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZUBBCB62N3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pokemon-emin-taskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pokemon-emin-task.app/pokemon-emin-task";
+			};
+			name = Release;
+		};
 		8CE7B4292810641200C72172 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -365,6 +538,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -418,7 +592,6 @@
 		};
 		8CE7B42C2810641200C72172 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FD403C7CBAA15A55AEB3F16 /* Pods-pokemon-emin-task.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -447,7 +620,6 @@
 		};
 		8CE7B42D2810641200C72172 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 067DA960193C98AAB04DAEBF /* Pods-pokemon-emin-task.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -477,6 +649,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8C2844462811E2EC009712BC /* Build configuration list for PBXNativeTarget "pokemon-emin-taskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C2844472811E2EC009712BC /* Debug */,
+				8C2844482811E2EC009712BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8CE7B4122810641000C72172 /* Build configuration list for PBXProject "pokemon-emin-task" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -496,6 +677,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8C2844362811E2B3009712BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C2844372811E2B3009712BC /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C2844362811E2B3009712BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		8C2844392811E2B3009712BC /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C2844362811E2B3009712BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8CE7B40F2810641000C72172 /* Project object */;
 }
